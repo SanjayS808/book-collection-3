@@ -1,0 +1,22 @@
+<!-- app/views/books/show.html.erb -->
+<h1>Book Details</h1>
+
+<p>
+  <h2>Title:</h2>
+  <%= @book.title %>
+</p>
+<p>
+  <h3>Author:</h3>
+  <%= @book.author %>
+</p>
+<p>
+  <h3>Price:</h3>
+  <%= @book.price %>
+</p>
+<p>
+  <h3>Published Date:</h3>
+  <%= @book.published_date %>
+</p>
+
+<%= link_to 'Edit', edit_book_path(@book), class: 'btn btn-warning' %>
+<%= link_to 'Back to Home', books_path, class: 'btn btn-secondary' %>
